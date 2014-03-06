@@ -1,0 +1,3 @@
+HasheadoBlogBundle:
+    resource: "@HasheadoBlogBundle/Resources/config/routing.yml"
+    prefix:   /
