@@ -1,6 +1,7 @@
 /vendor
 /composer.lock
 /app/config/parameters.yml
+/app/config/security.yml
 /app/cache/*
 /app/logs/*
 /web/bundles/
