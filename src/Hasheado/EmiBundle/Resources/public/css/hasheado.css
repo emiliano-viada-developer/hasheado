@@ -1,0 +1,142 @@
+/**
+Hasheado CSS Stylesheet 
+Emiliano Viada (emjovi@gmail.com)
+*/
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
+body {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+a {
+	color: #ff8014;
+}
+a:hover {
+	color: inherit;
+}
+a:focus {
+	outline: 0;
+	outline-offset: 0;
+}
+.navbar {
+	position: fixed;
+	z-index: 999;
+}
+header#mainhead {
+	margin-top: 40px;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #FF8214),
+		color-stop(1, #FFFFFF)
+	);
+	background-image: -o-linear-gradient(bottom, #FF8214 0%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(bottom, #FF8214 0%, #FFFFFF 100%);
+	background-image: -webkit-linear-gradient(bottom, #FF8214 0%, #FFFFFF 100%);
+	background-image: -ms-linear-gradient(bottom, #FF8214 0%, #FFFFFF 100%);
+	background-image: linear-gradient(to bottom, #FF8214 0%, #FFFFFF 100%);
+}
+/*** NAV ***/
+.navbar .navbar-inner {
+	background-color: #fff;
+	/*border-bottom: 1px solid #ff8014;*/
+	-webkit-box-shadow: 0 1px 3px rgba(255, 130, 20, 0.25), inset 0 -1px 0 rgba(255, 130, 20, 0.1);
+	-moz-box-shadow: 0 1px 3px rgba(255, 130, 20, 0.25), inset 0 -1px 0 rgba(255, 130, 20, 0.1);
+	box-shadow: 0 1px 3px rgba(255, 130, 20, 0.25), inset 0 -1px 0 rgba(255, 130, 20, 0.1);
+	background-image: none;
+}
+.navbar .navbar-inner .container {
+	width: 940px;
+}
+.nav-collapse .nav .nav-header {
+	color: #ff8014;
+}
+.navbar .nav > li.open a.dropdown-toggle {
+	color: #ff8014;
+}
+.navbar .nav > li > a {
+	text-shadow: none;
+}
+.navbar .nav > li > a:hover {
+	color: #ff8014;
+	text-shadow: none;
+}
+.navbar .nav > li > a span {
+	position: relative;
+	top: 1px;
+	padding-left: 2px;
+}
+.navbar .nav li.dropdown .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open .caret {
+	border-top-color: #000;
+	border-bottom-color: #000;
+}
+.nav li.dropdown.open .caret,
+.nav li.dropdown.open.active .caret,
+.nav li.dropdown.open a:hover .caret {
+	border-top-color: #ff8014;
+	border-bottom-color: #ff8014;
+	opacity: inherit;
+}
+.navbar .nav li.dropdown:hover .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open .caret {
+	border-top-color: #ff8014;
+	border-bottom-color: #ff8014;
+}
+.dropdown:hover .caret, .open .caret {
+	color: #ff8014;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #ff8014;
+}
+.navbar-search .search-query {
+	width: 200px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+	border: 0;
+	padding: 5px 10px;
+}
+/*** END NAV ***/
+.dropdown-menu {
+	min-width: initial;
+}
+.descriptionwrapper {
+	padding-left: 25px;
+}
+
+/*** Media queries - Breakpoints ***/
+@media (max-width: 979px) {
+	.navbar-inverse .nav-collapse .nav>li>a:hover,
+	.navbar-inverse .nav-collapse .nav>li>a:focus,
+	.navbar-inverse .nav-collapse .dropdown-menu a:hover,
+	.navbar-inverse .nav-collapse .dropdown-menu a:focus {
+		background-color: inherit;
+	}
+
+	.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+		color: #ff8014;
+	}
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	header#mainhead {
+		margin-top: 41px;
+	}
+	.navbar-search .search-query {
+		margin-bottom: 0;
+	}
+	footer .row-fluid [class*="span"]:first-child {
+		margin-left: 2.127659574%;
+	}
+}
+/* Portrait phone to landscape tablet */
+@media (max-width: 480px) {
+	.navbar-search .search-query {
+		width: auto;
+	}
+}

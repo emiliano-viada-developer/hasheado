@@ -1,0 +1,56 @@
+<div class="sidebar clearfix">
+		
+	<!-- Search -->
+	<div>
+		<h3 class="title">Buscar</h2>
+		<div>
+			<form class="form-search" method="get" action="{{ path('hasheado_blog_search') }}">
+				<div class="input-append">
+					<input type="text" class="search-query" name="q" value="{{ app.request.get('q') }}" />
+					<button type="submit" class="btn {% if ( app.request.get('q') | length == 0) %}disabled{% endif %}">Buscar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- Categories -->
+	<div>
+		<h3 class="title">Categor&iacute;as</h3>
+		<div>
+			{% render(controller('HasheadoBlogBundle:BlogCategory:withPosts')) %}
+		</div>
+	</div>
+
+	<!-- Archive -->
+	<div>
+		<h3 class="title">Archivo</h3>
+		<div>
+			{% render(controller('HasheadoBlogBundle:BlogPost:archive')) %}
+		</div>
+	</div>
+
+	<!-- Popular Posts -->
+	<div>
+		<h3 class="title">Posts Populares</h3>
+		<div>
+			{% render(controller('HasheadoBlogBundle:BlogPost:popular')) %}
+		</div>
+	</div>
+
+	<!-- Latest Comments -->
+	<div>
+		<h3 class="title">&Uacute;ltimos Comentarios</h3>
+		<div>
+			{% render(controller('HasheadoBlogBundle:BlogComment:latest')) %}
+		</div>
+	</div>
+
+	<!-- Popular Tags -->
+	<div>
+		<h3 class="title">Tags Populares</h3>
+		<div>
+			{% render(controller('HasheadoBlogBundle:BlogPost:tags')) %}
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,92 @@
+<!-- Nav --> 
+<div class="navbar navbar-inverse span12">
+	<div class="navbar-inner">
+		<div class="container">
+			<div class="nav-collapse collapse navbar-inverse-collapse">
+				<div class="span8">
+					<ul class="nav">
+						<li>
+							<a href="{{ path('hasheado_blog_homepage') }}" title="Home">
+								<i class="fa fa-home fa-lg"></i>
+								<span class="hidden-phone">Home</span>
+							</a>
+						</li>
+						<li><a href="https://twitter.com/EmiViada" title="Twitter" target="_blank">
+							<i class="fa fa-twitter fa-lg"></i>
+							<span class="hidden-phone">Twitter</span>
+						</a></li>
+						<!--<li><a href="#">Link</a></li>-->
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="fa fa-link fa-lg"></i>
+								<span class="hidden-phone">Links de interes <span class="caret"></span></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="http://www.excedesoft.com" title="Excedesoft" target="_blank">Excedesoft</a></li>
+								<li class="divider"></li>
+								<li class="nav-header">Bookmarks</li>
+								<li><a href="http://php.net" title="PHP" target="_blank">PHP</a></li>
+								<li><a href="http://www.php-fig.org" title="PHP-FIG" target="_blank">PHP-FIG</a></li>
+								<li><a href="http://symfony.com" title="Symfony" target="_blank">Symfony</a></li>
+								<li><a href="http://laravel.com" title="Laravel" target="_blank">Laravel</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+					<form class="navbar-search pull-left" method="get" action="{{ path('hasheado_blog_search') }}">
+						<input class="search-query" name="q" placeholder="Buscar" type="text" value="{{ app.request.get('q') }}">
+					</form>
+				</div>
+				
+				<div class="span4 hidden-phone">
+					<ul class="nav pull-right right-menu">
+						<li>
+							<a href="http://feeds.feedburner.com/Hasheadocom" title="Suscribete a hasheado.com" target="_blank">
+								<i class="fa fa-rss fa-lg"></i>
+								<span class="hidden-phone">Suscribete</span>
+							</a>
+						</li>
+						<!--<li class="divider-vertical"></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>-->
+					</ul>
+				</div>
+				
+			</div><!-- /.nav-collapse -->
+		</div>
+	</div><!-- /navbar-inner -->
+</div>
+<!-- END Nav -->
+
+<!-- Header -->
+<header id="mainhead" class="clearfix row-fluid">
+	<div class="container" id="header-wrapper">
+		<div id="header" class="span10 offset2">
+			<div class="header section" id="blog-title">
+				<div class="widget Header" id="Header1">
+					<div id="header-inner">
+						<div class="titlewrapper">
+							<!--<h1 class="title">{{ blog_title }}</h1>-->
+							<img src="bundles/hasheadoemi/images/hasheado-logo.png" alt="Hasheado-logo">
+						</div>
+						<div class="descriptionwrapper">
+							<p class="description"><span>Blog personal de @EmiViada</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="top-ad">
+			<div class="top-ad section" id="top-ad"></div>
+		</div>
+	</div>
+</header>
+<!-- END Header -->

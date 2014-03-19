@@ -13,8 +13,10 @@
 		'bundles/hasheadoblog/syntaxhighlighter/css/shCoreDefault.css'
 		'bundles/hasheadoblog/syntaxhighlighter/css/shThemeRDark.css'
 		'bundles/hasheadoblog/css/main.css'
-		'bundles/hasheadoblog/css/spaces.css' filter='cssrewrite' %}
+		'bundles/hasheadoblog/css/spaces.css'
+		'bundles/hasheadoemi/css/hasheado.css' filter='cssrewrite' %}
 		<link rel="stylesheet" type="text/css" href="{{ asset_url }}" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 	{% endstylesheets %}
 {% endblock stylesheets %}
@@ -26,7 +28,7 @@
 		<!-- Header nav -->
 		{% include 'HasheadoBlogBundle::_header_nav.html.twig' %}
 
-		<div class="container" id="container">
+		<div class="container ptl" id="container">
 
 			<div class="row-fluid">
 
@@ -62,7 +64,8 @@
 				   'bundles/hasheadoblog/syntaxhighlighter/js/shBrushPlain.js'
 				   'bundles/hasheadoblog/syntaxhighlighter/js/shBrushSql.js'
 				   'bundles/hasheadoblog/syntaxhighlighter/js/shBrushXml.js'
-				   'bundles/hasheadoblog/js/hasheado-blog.js' %}
+				   'bundles/hasheadoblog/js/hasheado-blog.js'
+				   'bundles/hasheadoemi/js/hasheado.js' %}
 		<script type="text/javascript" src="{{ asset_url }}"></script>
 
 	{% endjavascripts %}

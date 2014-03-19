@@ -19,7 +19,8 @@
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "hasheado/blog-bundle": "dev-master"
+        "hasheado/blog-bundle": "dev-master",
+        "symfony/console": "2.5.*@dev"
     },
     "scripts": {
         "post-install-cmd": [
