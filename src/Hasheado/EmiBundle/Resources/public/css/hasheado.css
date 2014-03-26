@@ -6,11 +6,15 @@ Emiliano Viada (emjovi@gmail.com)
 body {
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+h2 {
+	font-size: 28px;
+}
 a {
 	color: #ff8014;
 }
 a:hover {
-	color: inherit;
+	color: #ffb347;
+	text-decoration: none;
 }
 a:focus {
 	outline: 0;
@@ -107,6 +111,9 @@ header#mainhead {
 }
 .descriptionwrapper {
 	padding-left: 25px;
+}
+.post-detail h2 a {
+	color: #ff8014;
 }
 
 /*** Media queries - Breakpoints ***/
