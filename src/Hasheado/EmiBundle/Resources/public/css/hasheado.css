@@ -2,12 +2,29 @@
 Hasheado CSS Stylesheet 
 Emiliano Viada (emjovi@gmail.com)
 */
-@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
+/*@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");*/
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,700italic,400,700");
+@import url("//fonts.googleapis.com/css?family=Bitter:400italic,700italic,400,700");
 body {
-	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+h1, h2, h3 {
+	font-family: Bitter, Georgia, serif;
+	font-weight: normal;
+	line-height: 1.1;
+	color: #ff8014;
+}
+h1 {
+	font-size: 44px;
 }
 h2 {
-	font-size: 28px;
+	font-size: 40px;
+}
+h3 {
+	font-size: 20px;
 }
 a {
 	color: #ff8014;
@@ -33,11 +50,17 @@ header#mainhead {
 		color-stop(0, #FF8214),
 		color-stop(1, #FFFFFF)
 	);
-	background-image: -o-linear-gradient(bottom, #FF8214 0%, #FFFFFF 100%);
-	background-image: -moz-linear-gradient(bottom, #FF8214 0%, #FFFFFF 100%);
-	background-image: -webkit-linear-gradient(bottom, #FF8214 0%, #FFFFFF 100%);
-	background-image: -ms-linear-gradient(bottom, #FF8214 0%, #FFFFFF 100%);
-	background-image: linear-gradient(to bottom, #FF8214 0%, #FFFFFF 100%);
+	background-image: -o-linear-gradient(bottom, #FF8214 -100%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(bottom, #FF8214 -100%, #FFFFFF 100%);
+	background-image: -webkit-linear-gradient(bottom, #FF8214 -100%, #FFFFFF 100%);
+	background-image: -ms-linear-gradient(bottom, #FF8214 -100%, #FFFFFF 100%);
+	background-image: linear-gradient(to bottom, #FF8214 -100%, #FFFFFF 100%);
+}
+p.footer-link {
+	font-size: 14px;
+}
+.descriptionwrapper .description {
+	font-style: italic;
 }
 /*** NAV ***/
 .navbar .navbar-inner {
@@ -96,6 +119,9 @@ header#mainhead {
 	text-decoration: none;
 	background-color: #ff8014;
 }
+.form-search .input-append .search-query {
+	width: 195px;
+}
 .navbar-search .search-query {
 	width: 200px;
 	background-color: #fff;
@@ -106,6 +132,16 @@ header#mainhead {
 	padding: 5px 10px;
 }
 /*** END NAV ***/
+.sidebar {
+	padding: 0 0 0 20px;
+}
+.sidebar li {
+	line-height: 22px;
+}
+.sidebar i {
+	color: #666;
+	margin-right: 2px;
+}
 .dropdown-menu {
 	min-width: initial;
 }
@@ -114,6 +150,9 @@ header#mainhead {
 }
 .post-detail h2 a {
 	color: #ff8014;
+}
+#dp_swf_engine {
+    display: none;
 }
 
 /*** Media queries - Breakpoints ***/
@@ -124,9 +163,11 @@ header#mainhead {
 	.navbar-inverse .nav-collapse .dropdown-menu a:focus {
 		background-color: inherit;
 	}
-
 	.navbar-inverse .nav-collapse .dropdown-menu a:hover {
 		color: #ff8014;
+	}
+	.form-search .input-append .search-query {
+		width: 130px;
 	}
 }
 /* Landscape phone to portrait tablet */
@@ -139,6 +180,9 @@ header#mainhead {
 	}
 	footer .row-fluid [class*="span"]:first-child {
 		margin-left: 2.127659574%;
+	}
+	.sidebar {
+		padding: 10px 0 0;
 	}
 }
 /* Portrait phone to landscape tablet */

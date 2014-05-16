@@ -1,0 +1,13 @@
+<ul class="unstyled">
+	{% if months|length > 0 %}
+		{% for month, ps in months %}
+			{% set exploded = month|split(' ') %}
+			<li> 
+				<i class="fa fa-calendar"></i>
+				<a href="{{ path('hasheado_blog_post_archive', { 'year': exploded[0], 'month': monthArray[exploded[1]] }) }}">{{ month }} ({{ ps }})</a>
+			</li>
+		{% endfor %}
+	{% else %}
+		<li>No months.</li>
+	{% endif %}
+</ul>
