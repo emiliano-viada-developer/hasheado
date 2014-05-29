@@ -1,0 +1,12 @@
+<ul class="unstyled">
+	{% if comments|length > 0 %}
+		{% for comment in comments %}
+			<li> 
+				<i class="icon-comment"></i>
+				<a href="{{ comment.pageURL }}#comments">{{ comment.message }}</a>
+			</li>
+		{% endfor %}
+	{% else %}
+		<li>No hay comentarios.</li>
+	{% endif %}
+</ul>

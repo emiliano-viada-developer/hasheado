@@ -16,7 +16,7 @@
 							<time datetime="{{ post.publishedAt.format('c') }}">
 								{{ post.publishedAt | localeDate('long', 'none', app.request.locale) }}
 							</time> -
-							<a href="{{ path('hasheado_blog_post_detail', { 'slug': post.slug }) }}#comments">{{ post.comments|length }} comentarios</a>
+							<a href="{{ path('hasheado_blog_post_detail', { 'slug': post.slug }) }}#disqus_thread">{{ post.comments|length }} comentarios</a>
 						</p>
 					</header>
 					<p>{{ post.content|raw }}</p>
