@@ -154,6 +154,13 @@ p.footer-link {
 #dp_swf_engine {
     display: none;
 }
+/*** SyntaxHighlighter ***/
+.syntaxhighlighter {
+	padding: 5px 0;
+}
+.syntaxhighlighter .toolbar {
+	display: none;
+}
 
 /*** Media queries - Breakpoints ***/
 @media (max-width: 979px) {
